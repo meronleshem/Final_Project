@@ -3,8 +3,9 @@ import email
 from email.policy import default
 from enum import unique
 from time import timezone
-from website import db
 from flask_login import UserMixin
+from . import db
+
 from sqlalchemy.sql import func
 
 class Note(db.Model):
